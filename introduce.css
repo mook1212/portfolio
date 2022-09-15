@@ -4,6 +4,8 @@
 body {
     height: 2000px;
 }
+
+/* header */
 .header {
     border:  1px solid black;
     height: 600px;
@@ -83,6 +85,38 @@ body {
     font-weight: bold;
 }
 
-.test p {
-    color: blue;
+/* about */
+
+.about {
+    margin: 0px 15%;
+}
+.about-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 40px;
+}
+.about-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.about-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid;
+}
+
+.about-item i {
+    margin-bottom: 30px;
+    margin-right: 10px;
+}
+.about-item p:first-child {
+    font-weight: bold;
+}
+.about-item p {
+    width: 100%;
 }
