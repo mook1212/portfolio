@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="introduce.css">
+</head>
+
+<body>
+
+    <!-- header -->
+    <div class="header">
+
+        <div class="header-nav">
+            <div class="nav-content">
+                <a>MOOK</a>
+                <div class="header-content-box">
+                    <p>About me</p>
+                    <p>Skills</p>
+                    <p>GitHub</p>
+                    <p>Project</p>
+                    <p>Contact</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <p>- 김경묵 -</p>
+            <p>Front-end developer Portfolio</p>
+        </div>
+        <div class="header-deco"></div>
+
+        <div class="header-about">
+            <p>안녕하세요</p>
+            <p>긍정적인 마인드, 노력하는 신입 개발자 김경묵입니다.</p>
+            <p>제 포트폴리오 페이지에 오신걸 환엽합니다.</p>
+        </div>
+
+        <div class="header-more">
+            <button>MORE</button>
+        </div>
+    </div>
+
+    <script>
+
+        var beforePosition = document.documentElement.scrollTop
+
+        document.addEventListener('scroll', function () {
+
+            var afterPosition = document.documentElement.scrollTop;
+
+            // 스크롤 맨 위
+            if (window.scrollY == 0) {
+                document.querySelector('.header-nav').style.backgroundColor = ''
+                document.querySelector('a').style.color = 'wheat'
+                document.querySelector('.header-content-box').style.color = 'wheat'
+            }
+
+
+            if (afterPosition > 50) {
+
+
+                if (beforePosition < afterPosition) {
+                    // 스크롤 아래로
+
+                    // document.getElementById('nav').style.opacity = '0'
+                    document.querySelector('.header-nav').style.backgroundColor = 'white'
+                    document.querySelector('a').style.color = 'black'
+                    document.querySelector('.header-content-box p').style.color = 'black'
+
+
+
+                } else {
+                    // 스크롤 위로 
+                    // document.getElementById('nav').style.opacity = '1'
+                    // document.getElementById('nav').style.transition = '1s'
+                    // document.getElementById('nav').style.backgroundColor = ''
+                    // document.querySelector('a').style.color = 'black'
+                    // document.querySelector('nav i').style.color = 'black'
+                    // document.getElementById('basket').style.color = 'black'
+
+
+                }
+
+            } else {
+                // 평상 시
+                // document.getElementById('nav').style.backgroundColor = ''
+            }
+            beforePosition = afterPosition;
+        });
+
+    </script>
+
+
+
+
+    <!-- about -->
+
+</body>
+
+</html>
