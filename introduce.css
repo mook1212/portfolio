@@ -88,7 +88,7 @@ body {
 /* about */
 
 .about {
-    margin: 0px 15%;
+    margin: 0px 8%;
 }
 .about-title {
     text-align: center;
@@ -107,7 +107,8 @@ body {
     justify-content: center;
     width: 100%;
     font-size: 18px;
-    border: 1px solid;
+    height: 70px;
+    /* border: 1px solid; */
 }
 
 .about-item i {
@@ -120,3 +121,21 @@ body {
 .about-item p {
     width: 100%;
 }
+@media (max-width: 800px) {
+    .about-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items:flex-start;
+        /* justify-content: flex-start; */
+    }
+    .about-item {
+        width: 50%;
+        align-items:flex-start;
+        justify-content: flex-start;
+        /* margin-left: auto; */
+    }
+    .about-item i {
+        margin-left: 40px;
+    }
+
+  }
