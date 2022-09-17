@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 body {
     height: 2000px;
@@ -87,6 +88,8 @@ body {
 
 /* about */
 
+
+/* about 내정보 */
 .about {
     margin: 0px 8%;
 }
@@ -121,12 +124,14 @@ body {
 .about-item p {
     width: 100%;
 }
+
 @media (max-width: 800px) {
     .about-content {
         flex-direction: row;
         flex-wrap: wrap;
         align-items:flex-start;
         /* justify-content: flex-start; */
+        margin-left: 10%;
     }
     .about-item {
         width: 50%;
@@ -138,4 +143,37 @@ body {
         margin-left: 40px;
     }
 
-  }
+}
+@media (max-width: 550px) {
+    .about-content {
+        margin-left: 0;
+    }
+}
+
+/* about 이미지 */
+
+.about-my-intro {
+    /* border: 1px solid ; */
+    height: 600px;
+    display: flex;
+    background-color: wheat;
+}
+.about-img {
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid red; */
+    margin-left: 6%;
+    margin-top: 50px;
+    border-radius: 250px;
+    background-image: url(me2.jpg);
+    background-size: cover;
+}
+.about-intro {
+    border: 1px solid;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.main {
+    border: 1px solid red;
+}
