@@ -157,23 +157,33 @@ body {
     height: 600px;
     display: flex;
     background-color: wheat;
+    margin-top: 20px;
 }
 .about-img {
-    width: 500px;
+    width: 400px;
     height: 500px;
     /* border: 1px solid red; */
     margin-left: 6%;
     margin-top: 50px;
-    border-radius: 250px;
+    /* border-radius: 250px; */
     background-image: url(me2.jpg);
     background-size: cover;
 }
 .about-intro {
     border: 1px solid;
     width: 50%;
-    margin-left: 50px;
+    margin-left: 80px;
+    font-size: 20px;
+    height: 85%;
+    margin-top: 50px;
 }
-
-.main {
-    border: 1px solid red;
+.skill {
+    border: 1px solid black;
+    height: 500px;
+}
+.skill-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
 }
