@@ -5,6 +5,9 @@
 body {
     height: 2000px;
 }
+li {
+    list-style: none;
+}
 
 /* header */
 .header {
@@ -85,9 +88,16 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+@media(max-width : 700px ) {
+    .header-about {
+        font-size: 16px;
+    }
+    .nav-content a {
+        margin-left: 10px;
+    }
+}
 
 /* about */
-
 
 /* about 내정보 */
 .about {
@@ -156,24 +166,90 @@ body {
     /* border: 1px solid ; */
     height: 600px;
     display: flex;
+    justify-content: center;
     background-color: wheat;
+    margin-top: 20px;
 }
 .about-img {
-    width: 500px;
+    width: 400px;
     height: 500px;
-    /* border: 1px solid red; */
-    margin-left: 6%;
-    margin-top: 50px;
-    border-radius: 250px;
     background-image: url(me2.jpg);
     background-size: cover;
 }
 .about-intro {
-    border: 1px solid;
-    width: 50%;
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    font-size: 20px;
+    margin-top: 50px;
+}
+.about-intro .aa {
+    width:  700px;
+    /* width: 30%; */
+    margin-left: 80px;
 }
 
-.main {
-    border: 1px solid red;
+@media (max-width: 1200px) {
+    .about-img {
+        width: 350px;
+        height: 500px;
+    }
+    .about-intro {
+        font-size: 15px;
+        margin-top: 50px;
+    }
+    .about-intro .aa {
+        width: 40%;
+        margin-left: 40px;
+    }
 }
+@media(max-width : 800px) {
+    .about-my-intro {
+        height: 800px;
+    }
+    .about-img {
+        width: 90%;
+        height: 400px;
+        margin-left: 5%;
+    }
+    .about-intro {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    .about-intro .aa {
+        width: 90%;
+        margin: 30px 5%;
+        height: 300px;
+    }
+}
+
+
+.skill {
+    /* border: 1px solid black; */
+    height: 500px;
+}
+.skill-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+.skill-container {
+    height: 500px;
+}
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    width: 25%;
+    min-width: 250px;
+    height: 200px;
+    border: 1px solid black;
+}
+/* @media (max-width: 1050px) {
+    li {
+        width: 350px;
+    }
+} */
