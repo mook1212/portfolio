@@ -11,7 +11,7 @@ li {
 
 /* header */
 .header {
-    border:  1px solid black;
+    /* border:  1px solid black; */
     height: 600px;
     width: 100%;
     background-image: url(header.jpg);
@@ -55,7 +55,7 @@ li {
     color: white;
     font-size: 45px;
     font-weight: bold;
-    margin-top: 120px;
+    padding-top: 120px;
 }
 .header-main p {
     margin-bottom: 10px;
@@ -162,6 +162,9 @@ li {
 
 /* about 이미지 */
 
+.about {
+    /* background-color: wheat; */
+}
 .about-my-intro {
     /* border: 1px solid ; */
     height: 600px;
@@ -173,18 +176,12 @@ li {
 .about-img {
     width: 400px;
     height: 500px;
-<<<<<<< HEAD
-=======
     /* border: 1px solid red; */
-    margin-left: 6%;
-    margin-top: 50px;
     /* border-radius: 250px; */
->>>>>>> 0530f3e0b09f08f0b59d48a0439b9ee2a43c3d57
     background-image: url(me2.jpg);
     background-size: cover;
 }
 .about-intro {
-<<<<<<< HEAD
     display: flex;
     justify-content: center;
     /* border: 1px solid; */
@@ -234,17 +231,6 @@ li {
 
 .skill {
     /* border: 1px solid black; */
-=======
-    border: 1px solid;
-    width: 50%;
-    margin-left: 80px;
-    font-size: 20px;
-    height: 85%;
-    margin-top: 50px;
-}
-.skill {
-    border: 1px solid black;
->>>>>>> 0530f3e0b09f08f0b59d48a0439b9ee2a43c3d57
     height: 500px;
 }
 .skill-title {
@@ -252,27 +238,36 @@ li {
     font-size: 40px;
     font-weight: bold;
     margin-top: 30px;
-<<<<<<< HEAD
 }
 .skill-container {
-    height: 500px;
+    /* background-color: wheat; */
 }
 .skill-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap
 }
-
 li {
     width: 25%;
-    min-width: 250px;
-    height: 200px;
-    border: 1px solid black;
+    height: 300px;
+    /* border: 1px solid black; */
 }
-/* @media (max-width: 1050px) {
+@media(max-width : 1000px) {
     li {
-        width: 350px;
+        width: 50%;
+        height: 250px;
     }
-} */
-=======
 }
->>>>>>> 0530f3e0b09f08f0b59d48a0439b9ee2a43c3d57
+.skill-list img {
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+.skill-list h3 {
+    font-size: 23px;
+}
+.skill-item {
+    display: flex;
+    height: 85%;
+    width: 80%;
+    margin-left: 10%;
+}
