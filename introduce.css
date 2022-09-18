@@ -10,6 +10,8 @@ li {
 }
 
 /* header */
+
+/* nav */
 .header {
     /* border:  1px solid black; */
     height: 600px;
@@ -50,6 +52,46 @@ li {
     opacity: 0.9;
     cursor: pointer;
 }
+
+/* m-nav */
+.nav-content i {
+    font-size: 30px;
+    margin-right: 10px;
+    display: none;
+}
+.m-nav-content-box {
+    color: wheat;
+    margin-left: 10px;
+    font-size: 20px;
+    display: none;
+}
+.m-nav-content-box p {
+    margin-bottom: 8px;
+}
+.m-nav-menu {
+    cursor: pointer;
+}
+
+@media(max-width : 700px) {
+    /* .m-nav-content-box {
+        display: block;
+    } */
+    .header-content-box {
+        display: none;
+    }
+    .nav-content i {
+        display: block;
+    }
+    .header-nav {
+        background-color: white;
+    }
+    .nav-content {
+        color: black;
+    }
+
+}
+
+/* header-intro */
 .header-main {
     text-align: center;
     color: white;
