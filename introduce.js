@@ -13,6 +13,15 @@ document.addEventListener('scroll', function () {
     let html_w = document.querySelector('html').clientWidth
 
     // 스크롤 맨 위
+
+    // window창이 701px 보다 아래일때
+    // if (window.scrollY == 0 && html_w < '701') {
+    //     document.querySelector('.header-nav').style.backgroundColor = ''
+    //     document.querySelector('.nav-content a').style.color = 'wheat'
+    //     document.querySelector('.nav-content').style.color = 'wheat'
+    // }
+
+    // window창이 701px 보다 클때
     if (window.scrollY == 0 && html_w > '700') {
         document.querySelector('.header-nav').style.backgroundColor = ''
         document.querySelector('.nav-content a').style.color = 'wheat'

@@ -24,6 +24,7 @@ li {
     width: 100%;
     /* margin: 0px 70px; */
     position: fixed;
+    background-color: '';
 }
 .nav-content {
     display: flex;
@@ -273,7 +274,7 @@ li {
 
 .skill {
     /* border: 1px solid black; */
-    height: 500px;
+    /* height: 500px; */
 }
 .skill-title {
     text-align: center;
@@ -312,4 +313,31 @@ li {
     height: 85%;
     width: 80%;
     margin-left: 10%;
+}
+
+
+/* git */
+.github {
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.747);
+    margin-top: 20px;
+}
+.github-title {
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 30px;
+}
+.github-main {
+    background-color: white;
+    width: 350px;
+    height: 250px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.github-main p:first-child {
+    font-size: 30px;
+    margin-left: 10px;
 }
