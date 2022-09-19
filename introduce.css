@@ -313,7 +313,12 @@ li {
     height: 85%;
     width: 80%;
     margin-left: 10%;
+    cursor: pointer;
 }
+/* .skill-list li :hover {
+    margin-bottom: 20px;
+    transition: 2s;
+} */
 
 
 /* git */
@@ -340,4 +345,8 @@ li {
 .github-main p:first-child {
     font-size: 30px;
     margin-left: 10px;
+}
+.github-main * {
+    margin: 10px;
+    font-weight: bold;
 }
