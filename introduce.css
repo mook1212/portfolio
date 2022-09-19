@@ -18,9 +18,10 @@ li {
     width: 100%;
     background-image: url(header.jpg);
     background-size: cover;
+
 }
 .header-nav {
-    height: 90px;
+    height: 70px;
     width: 100%;
     /* margin: 0px 70px; */
     position: fixed;
@@ -85,6 +86,7 @@ li {
     }
     .header-nav {
         background-color: white;
+        height: 55px;
     }
     .nav-content {
         color: black;
@@ -283,7 +285,7 @@ li {
     margin-top: 30px;
 }
 .skill-container {
-    /* background-color: wheat; */
+
 }
 .skill-list {
     display: flex;
@@ -292,7 +294,12 @@ li {
 li {
     width: 25%;
     height: 300px;
-    /* border: 1px solid black; */
+    cursor: pointer;
+}
+
+.skill-list :hover {
+    transform: translate(0px,5px);
+    transition: 1s;
 }
 @media(max-width : 1000px) {
     li {
@@ -313,12 +320,8 @@ li {
     height: 85%;
     width: 80%;
     margin-left: 10%;
-    cursor: pointer;
 }
-/* .skill-list li :hover {
-    margin-bottom: 20px;
-    transition: 2s;
-} */
+
 
 
 /* git */
@@ -349,4 +352,30 @@ li {
 .github-main * {
     margin: 10px;
     font-weight: bold;
+}
+
+
+/* project */
+.project {
+    height: 800px;
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+.project-container {
+    height: 300px;
+    border: 1px solid black;
+    display: flex;
+    margin-top: 15px;
+}
+.project-video {
+    width: 500px;
+    border: 1px solid red;
+    margin-left: 30px;
+}
+.project-intro {
+    height: 80%;
+    width: 650px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid blue;
 }
