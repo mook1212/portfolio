@@ -207,9 +207,7 @@ li {
 
 /* about 이미지 */
 
-.about {
-    /* background-color: wheat; */
-}
+
 .about-my-intro {
     /* border: 1px solid ; */
     height: 600px;
@@ -274,10 +272,8 @@ li {
 }
 
 
-.skill {
-    /* border: 1px solid black; */
-    /* height: 500px; */
-}
+/* skill */
+
 .skill-title {
     text-align: center;
     font-size: 40px;

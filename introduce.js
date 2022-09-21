@@ -14,13 +14,6 @@ document.addEventListener('scroll', function () {
 
     // 스크롤 맨 위
 
-    // window창이 701px 보다 아래일때
-    // if (window.scrollY == 0 && html_w < '701') {
-    //     document.querySelector('.header-nav').style.backgroundColor = ''
-    //     document.querySelector('.nav-content a').style.color = 'wheat'
-    //     document.querySelector('.nav-content').style.color = 'wheat'
-    // }
-
     // window창이 701px 보다 클때
     if (window.scrollY == 0 && html_w > '700') {
         document.querySelector('.header-nav').style.backgroundColor = ''
@@ -47,4 +40,24 @@ document.addEventListener('scroll', function () {
 
     }
     beforePosition = afterPosition;
+});
+
+// nav 스크롤 이동 
+
+
+
+document.querySelector('.header-content-box').addEventListener('click', e => {
+    if (e.target.nodeName === 'P') {
+        let id_value = e.target.dataset.link;
+        document.querySelector(id_value).scrollIntoView({ behavior: 'smooth' });
+    }
+});
+
+document.querySelector('.m-nav-content-box').addEventListener('click', e => {
+    console.log(e.target.nodeName);
+    if (e.target.nodeName === 'P') {
+        let id_value = e.target.dataset.link;
+        console.log(id_value);
+        document.querySelector(id_value).scrollIntoView({ behavior: 'smooth' });
+    }
 });
