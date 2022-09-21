@@ -42,9 +42,16 @@ document.addEventListener('scroll', function () {
     beforePosition = afterPosition;
 });
 
+// nav 조작
+document.querySelector('.m-nav-menu').addEventListener('click', ()=> {
+    document.querySelector('.m-nav-content-box').classList.toggle('show')
+})
+
+document.querySelector('.m-nav-content-box').addEventListener('click',()=> {
+    document.querySelector('.m-nav-content-box').classList.toggle('show')
+})
+
 // nav 스크롤 이동 
-
-
 
 document.querySelector('.header-content-box').addEventListener('click', e => {
     if (e.target.nodeName === 'P') {
