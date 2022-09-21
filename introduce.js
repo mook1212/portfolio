@@ -54,17 +54,24 @@ document.querySelector('.m-nav-content-box').addEventListener('click',()=> {
 // nav 스크롤 이동 
 
 document.querySelector('.header-content-box').addEventListener('click', e => {
+
     if (e.target.nodeName === 'P') {
         let id_value = e.target.dataset.link;
         document.querySelector(id_value).scrollIntoView({ behavior: 'smooth' });
     }
 });
 
+
 document.querySelector('.m-nav-content-box').addEventListener('click', e => {
-    console.log(e.target.nodeName);
+
     if (e.target.nodeName === 'P') {
         let id_value = e.target.dataset.link;
         console.log(id_value);
         document.querySelector(id_value).scrollIntoView({ behavior: 'smooth' });
     }
+});
+
+document.querySelector('.header-more').addEventListener('click', e => {
+
+        document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
 });
