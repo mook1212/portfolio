@@ -395,9 +395,7 @@ li {
     color: blue;
 }
 .project-intro p {
-    /* font-weight: bold; */
-    /* font-weight: 500; */
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 18px;
 }
 @media(max-width:1205px) {
@@ -427,6 +425,9 @@ li {
     .project-intro {
         width: 80%;
         margin: auto;
+    }
+    .project-intro p {
+        font-size: 15px;
     }
 }
 
