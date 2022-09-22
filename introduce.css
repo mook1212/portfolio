@@ -371,17 +371,19 @@ li {
 /* project */
 .project {
     background-color: wheat;
-    height: 1150px;
+    height: 1550px;
 }
 .project-container {
     height: 300px;
     display: flex;
-    margin-top: 50px;
+    margin-top: 100px;
     justify-content: center;
 }
 .project-video {
     width: 500px;
     margin-left: 30px;
+    max-height: 330px;
+    margin-right: 30px;
 }
 .project-video img {
     width: 100%;
@@ -390,6 +392,8 @@ li {
 .project-intro {
     width: 650px;
     margin-left: 30px;
+    display: flex;
+    flex-direction: column;
 }
 .project-intro h3 {
     color: blue;
@@ -398,6 +402,15 @@ li {
     font-weight: bold;
     font-size: 18px;
 }
+.project-link{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+.project-link *{
+    font-size: 13px;
+}
+
 @media(max-width:1205px) {
     .project-intro p {
         font-size: 16px;
@@ -406,16 +419,24 @@ li {
 
 @media(max-width:700px) {
     .project {
-        height: 1900px;
+        height: 2550px;
     }
     .project-container {
-        height: 500px;
+        height: 670px;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        background-color: aqua;
+    }
+    .project-container :not(:first-child) {
     }
     .project-video {
-        width: 80%;
-        height: 300px;
+        width: 90%;
+        /* height: 500px; */
+        margin: auto;
+        margin-top: 30px;
+    }
+    .project-video img {
         margin: auto;
     }
     .project-container h3 {
@@ -428,6 +449,9 @@ li {
     }
     .project-intro p {
         font-size: 15px;
+    }
+    .project-link {
+        margin-top: 15px;
     }
 }
 

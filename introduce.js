@@ -7,9 +7,6 @@ document.addEventListener('scroll', function () {
 
     var afterPosition = document.documentElement.scrollTop;
 
-    // let nav_child = document.querySelector('.header-content-box').childNodes
-    // console.log(nav_child);
-
     let html_w = document.querySelector('html').clientWidth
 
     // 스크롤 맨 위
