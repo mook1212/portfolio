@@ -72,3 +72,11 @@ document.querySelector('.header-more').addEventListener('click', e => {
 
         document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
 });
+
+let y = window.scrollY
+document.querySelector('.youtube-img').addEventListener('click',()=> {
+    document.querySelector('.click-img').style.top = y + 'px'
+    document.querySelector('.click-img').style.display = 'flex'
+    document.querySelector('.click-img').classList.add('stop-scroll')
+})
+
