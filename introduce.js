@@ -11,6 +11,12 @@ document.addEventListener('scroll', function () {
 
     // 스크롤 맨 위
 
+    if(window.scrollY != 0) {
+        document.querySelector('.header-nav').style.backgroundColor = 'white'
+        document.querySelector('a').style.color = 'black'
+        document.querySelector('.nav-content').style.color = 'black'
+    }
+
     // window창이 701px 보다 클때
     if (window.scrollY == 0 && html_w > '700') {
         document.querySelector('.header-nav').style.backgroundColor = ''
@@ -40,11 +46,11 @@ document.addEventListener('scroll', function () {
 });
 
 // nav 조작
-document.querySelector('.m-nav-menu').addEventListener('click', ()=> {
+document.querySelector('.m-nav-menu').addEventListener('click', () => {
     document.querySelector('.m-nav-content-box').classList.toggle('show')
 })
 
-document.querySelector('.m-nav-content-box').addEventListener('click',()=> {
+document.querySelector('.m-nav-content-box').addEventListener('click', () => {
     document.querySelector('.m-nav-content-box').classList.toggle('show')
 })
 
@@ -69,8 +75,7 @@ document.querySelector('.m-nav-content-box').addEventListener('click', e => {
 });
 
 document.querySelector('.header-more').addEventListener('click', e => {
-
-        document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('.about').scrollIntoView({ behavior: 'smooth' });
 });
 
 // let y = window.scrollY
@@ -79,4 +84,3 @@ document.querySelector('.header-more').addEventListener('click', e => {
 //     document.querySelector('.click-img').style.display = 'flex'
 //     document.body.classList.add('stop-scroll')
 // })
-
