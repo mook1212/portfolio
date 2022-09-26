@@ -10,6 +10,12 @@ a {
 li {
     list-style: none;
 }
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 /* header */
@@ -277,7 +283,12 @@ li {
     margin-top: 50px;
 }
 
-.about-intro .aa {
+.about-speach {
+    font-size: 16px;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+.about-intro .about-speach {
     width: 700px;
     /* width: 30%; */
     margin-left: 80px;
@@ -294,15 +305,16 @@ li {
         margin-top: 50px;
     }
 
-    .about-intro .aa {
-        width: 40%;
+    .about-intro .about-speach {
+        width: 50%;
         margin-left: 40px;
+        font-size: 13px;
     }
 }
 
 @media(max-width : 800px) {
     .about-my-intro {
-        height: 700px;
+        height: 1000px;
     }
 
     .about-img {
@@ -316,10 +328,10 @@ li {
         margin-top: 0px;
     }
 
-    .about-intro .aa {
+    .about-intro .about-speach {
         width: 90%;
         margin: 30px 5%;
-        height: 180px;
+        line-height: 1.8em;
     }
 }
 
@@ -415,7 +427,7 @@ li {
 /* project */
 .project {
     background-color: wheat;
-    height: 1750px;
+    height: 2300px;
     display: flex;
     flex-direction: column;
     align-items: center;
