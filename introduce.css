@@ -10,12 +10,9 @@ a {
 li {
     list-style: none;
 }
-@font-face {
-    font-family: 'MonoplexKR-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+TAS+Beginner:wght@500&family=Lato:wght@300&family=Nanum+Gothic&family=Rubik:wght@500&display=swap');
+
 
 
 /* header */
@@ -55,6 +52,7 @@ li {
     font-size: 30px;
     opacity: 0.9;
     cursor: pointer;
+
 }
 
 .header-content-box {
@@ -68,6 +66,7 @@ li {
     margin-left: 20px;
     opacity: 0.9;
     cursor: pointer;
+    
 }
 
 /* m-nav */
@@ -153,6 +152,7 @@ li {
 
 .header-about p {
     margin-bottom: 5px;
+    /* font-family: 'Nanum Gothic', sans-serif; */
     /* font-weight: bold; */
 }
 
@@ -195,6 +195,7 @@ li {
     font-weight: bold;
     font-size: 45px;
     margin-top: 40px;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .about-content {
@@ -210,6 +211,7 @@ li {
     width: 100%;
     font-size: 18px;
     height: 70px;
+
     /* border: 1px solid; */
 }
 
@@ -224,6 +226,8 @@ li {
 
 .about-item p {
     width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.5em;
 }
 
 @media (max-width: 800px) {
@@ -287,7 +291,10 @@ li {
     font-size: 16px;
     line-height: 1.5em;
     font-weight: bold;
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
+
 .about-intro .about-speach {
     width: 700px;
     /* width: 30%; */
@@ -422,6 +429,9 @@ li {
     margin: 10px;
     font-weight: bold;
 }
+.github-main p {
+    font-family: 'Nanum Gothic', sans-serif;
+}
 
 
 /* project */
@@ -470,9 +480,12 @@ li {
     color: blue;
 }
 
+
 .project-intro p {
     font-weight: bold;
     font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height: 1.5em;
 }
 
 .project-link {
