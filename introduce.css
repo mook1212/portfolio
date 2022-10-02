@@ -171,6 +171,7 @@ li {
     font-weight: bold;
     cursor: pointer;
 
+
 }
 
 @media(max-width : 700px) {
@@ -285,6 +286,7 @@ li {
     /* border: 1px solid; */
     font-size: 20px;
     margin-top: 50px;
+
 }
 
 .about-speach {
@@ -451,6 +453,8 @@ li {
     width: 1300px;
     background-color: white;
     border-radius: 15px;
+    box-shadow: 0.5px 0.5px 2px 1px grey;
+
 }
 
 .project-video {
@@ -478,6 +482,8 @@ li {
 
 .project-intro h3 {
     color: blue;
+    font-family: 'Nanum Gothic', sans-serif;
+
 }
 
 
@@ -501,6 +507,7 @@ li {
 
 
 @media(max-width:1250px) {
+    
     .project {
         height: 3000px;
     }
