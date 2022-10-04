@@ -486,6 +486,20 @@ li {
 
 }
 
+.useskill {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+.useskill-img {
+    width: 10%;
+    height: 100%;
+    margin: 0px 7px;
+}
+.useskill-img img {
+    width: 100%;
+    height: 100%;
+}
 
 .project-intro p {
     font-weight: bold;
@@ -509,11 +523,11 @@ li {
 @media(max-width:1250px) {
     
     .project {
-        height: 3000px;
+        height: 3480px;
     }
 
     .project-container {
-        height: 670px;
+        height: 790px;
         width: 90%;
         flex-direction: column;
         margin-top: 30px;
