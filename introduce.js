@@ -17,7 +17,7 @@ document.addEventListener('scroll', function () {
         document.querySelector('.nav-content').style.color = 'black'
     }
 
-    // window창이 701px 보다 클때
+    // window창 width가 701px 보다 클때
     if (window.scrollY == 0 && html_w > '700') {
         document.querySelector('.header-nav').style.backgroundColor = ''
         document.querySelector('.nav-content a').style.color = 'wheat'
