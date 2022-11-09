@@ -276,7 +276,7 @@ li {
     height: 400px;
     /* border: 1px solid red; */
     /* border-radius: 250px; */
-    background-image: url(./img/me2.jpg);
+    background-image: url(./img/증명사진1.jpg);
     background-size: cover;
 }
 
@@ -439,7 +439,7 @@ li {
 /* project */
 .project {
     background-color: wheat;
-    height: 2300px;
+    height: 2850px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -523,7 +523,7 @@ li {
 @media(max-width:1250px) {
     
     .project {
-        height: 3480px;
+        height: 4330px;
     }
 
     .project-container {
